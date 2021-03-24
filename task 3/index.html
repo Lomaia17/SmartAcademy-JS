@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Shopping Cart</title>
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <div>
+          <div class="input-container">
+            <div class="form__group field">
+            <input type="input" class="form__field" placeholder="Name" name="name" id='item-input' required />
+          </div>
+            <div class="form__group field form">
+              <input type="number" class="form__field" placeholder="Price" name="name" id='price-input' required />
+          </div>
+          </div>
+          <div class="btn-container">
+            <button id="add-product" class="product-btn">
+              <img src="cart.png" alt="cart" class="cart-2">
+              Add To Cart
+            </button>
+            <button id="price" class="price-btn">GET ALL ITEM PRICE</button>
+          </div>
+        </div>
+        <div class="list">
+          <ul id="product-list">
+
+          </ul>
+          <ul id="price-list">
+
+          </ul>
+        </div>
+        <div class="sum-container">
+          <img src="cart.png" alt="cart" class="cart">
+          <h1>ჯამი:<span id="sum"></span></h1>
+        </div>
+      </div>
+    </section>
+    <script src="main.js">
+
+    </script>
+  </body>
+</html>
