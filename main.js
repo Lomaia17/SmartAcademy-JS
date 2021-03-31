@@ -27,8 +27,14 @@ function display(num){
 
 function displayOnScreen(){
   let displayText = output.innerText.toString()
-  let displaySlice = displayText.slice(0, displayText.length-1)
-  output.innerText = displaySlice
+  let displaySlice = displayText.slice(0,displayText.length-1)
+ 
+  // 
+  if(displaySlice == ''){
+    output.innerText = '0'
+  }else {
+    output.innerText = displaySlice
+  }
 }
 
 // solve mathematical operations 
