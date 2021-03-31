@@ -2,6 +2,7 @@ let output = document.getElementById("output")
 let clear = document.getElementById("r1-1")
 let equal = document.getElementById("r5-2")
 let delButton = document.getElementById("r1-2")
+
 // function to clear output
 
 function clearDisplay(){
@@ -27,11 +28,7 @@ function display(num){
 function displayOnScreen(){
   let displayText = output.innerText.toString()
   let displaySlice = displayText.slice(0, displayText.length-1)
-  if(displayText != ' '){
- 	output.innerText = displaySlice
-  }else{
-  	output.innerText = 0;
-  }
+  output.innerText = displaySlice
 }
 
 // solve mathematical operations 
