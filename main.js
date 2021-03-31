@@ -1,58 +1,50 @@
-// Adds variables to DOM
-var itemInput = document.getElementById('item-input')
-var priceInput = document.getElementById('price-input')
-var addProductBtn = document.getElementById('add-product')
-var productList = document.getElementById('product-list')
-var priceList = document.getElementById('price-list')
-var priceBtn = document.getElementById('price')
+let output = document.getElementById("output")
+let clear = document.getElementById("r1-1")
+let equal = document.getElementById("r5-2")
+let delButton = document.getElementById("r1-2")
+// function to clear output
 
-// creates arrays for list
-
-var products = []
-var price = []
-
-// adds products to the list 
-
-var renderAllItem = function() {
-  productList.innerText = ''
-  priceList.innerText = ''
-  products.forEach(function(list){
-    var itemLi = document.createElement('li')
-    itemLi.innerText = list 
-    productList.appendChild(itemLi)
-  })
-  
-  // adds prices to the list
-  
-  price.forEach(function(list){
-    var itemLi = document.createElement('li')
-    itemLi.innerText = list + '₾'
-    priceList.appendChild(itemLi)
-  })
-  itemInput.value = ''
-  priceInput.value = ''
+function clearDisplay(){
+  output.innerText = "0"
 }
 
-// creates functions for buttons
-
-// gets input values and sends to arr
-var handleButtonClick = function(){
-  var itemValue = itemInput.value
-  var priceValue = Number(priceInput.value)
-  products.push(itemValue)
-  price.push(priceValue)
-  renderAllItem()
+//  function to remove zero 
+function clearZero() {
+  if (output.innerText === "0" ) {
+    output.innerText=  ' '
+ }
 }
 
-// sum function
-var sumBtn = function(){
-  var sum = price.reduce(function(a,b){
-    return a + b 
-  }, 0)
-  document.getElementById("sum").innerHTML = sum+'₾'
-  
-}
-// adds functions to buttons
+// displays numbers on output  
 
-addProductBtn.addEventListener('click', handleButtonClick)
-priceBtn.addEventListener('click', sumBtn)
+function display(num){
+  clearZero()
+  output.innerText += num
+}
+
+// adds function to CE button
+
+function displayOnScreen(){
+  let displayText = output.innerText.toString()
+  let displaySlice = displayText.slice(0, displayText.length-1)
+  if(displayText != ' '){
+ 	output.innerText = displaySlice
+  }else{
+  	output.innerText = 0;
+  }
+}
+
+// solve mathematical operations 
+function solve(){
+  clearZero()
+  let solved = eval(output.innerText)
+  output.innerText = solved
+}
+
+// adding del button 
+
+// adding functions to buttons
+
+clear.addEventListener('click', clearDisplay )
+equal.addEventListener('click', solve)
+delButton.addEventListener('click', displayOnScreen)
