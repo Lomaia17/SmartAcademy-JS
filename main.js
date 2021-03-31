@@ -41,8 +41,6 @@ function solve(){
   output.innerText = solved
 }
 
-// adding del button 
-
 // adding functions to buttons
 
 clear.addEventListener('click', clearDisplay )
