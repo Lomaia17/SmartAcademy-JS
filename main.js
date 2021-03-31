@@ -28,8 +28,6 @@ function display(num){
 function displayOnScreen(){
   let displayText = output.innerText.toString()
   let displaySlice = displayText.slice(0,displayText.length-1)
- 
-  // 
   if(displaySlice == ''){
     output.innerText = '0'
   }else {
