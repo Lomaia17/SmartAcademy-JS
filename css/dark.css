@@ -2,9 +2,9 @@
 
 body { 
   background-color:#374152;
+  overflow: hidden;
 }
-
-.display{
+.output{
   background-color:#1F2939;
   font-family: 'Montserrat', sans-serif;
   color: white;
@@ -17,7 +17,7 @@ body {
   border-top-right-radius: 5px;
 }
 
-.buttons-container{
+.calculator-buttons{
   width: 280px;
   border: 1.75px solid #121A2A;
   background-color:#1F2939;
@@ -40,8 +40,15 @@ button {
   font-family: 'Montserrat', sans-serif;
   margin-right:5px;
 }
+#switch {
+  width: auto;
+  padding:10px;
+  color: white;
+  display: flex;
+  align-items: center;
+}
 
-#r1-1, #r1-2{
+#r1-1{
   background-color: #3C82F7;
 }
 #r5-1{
@@ -60,7 +67,7 @@ button {
   flex: 1;
 }
 
-.calculator-container{ 
+.container{ 
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -71,4 +78,17 @@ button {
 button:hover,#r1-1:hover, #r5-2:hover,#r1-2:hover, #r2-4:hover, #r3-4:hover, #r4-4:hover, #r5-2:hover, #r5-1:hover  {
   transition: 0.1s;
   background-color: rgb(182, 178, 178);
+ }
+
+ .light-background{
+   background-color:white;
+ }
+
+ .light-calculator{
+   background-color:#e3ead1;
+   color: black;
+   border:none;
+   -webkit-box-shadow: 3px 13px 21px 9px rgba(0,0,0,0.75);
+   -moz-box-shadow: 3px 13px 21px 9px rgba(0,0,0,0.75);
+   box-shadow: 3px 13px 21px 9px rgba(0,0,0,0.75);
  }
