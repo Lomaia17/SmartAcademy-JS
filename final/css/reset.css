@@ -25,6 +25,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	overflow-x: hidden;
 }
 ol, ul {
 	list-style: none;
@@ -42,3 +43,10 @@ table {
 	border-spacing: 0;
 }
 
+*{
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
