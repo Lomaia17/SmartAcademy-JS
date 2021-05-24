@@ -5,6 +5,9 @@
   display: flex;
 }
 
+a .bold { 
+  font-weight: 800;
+}
 /* Sign In Page Styling */
 
 .signin-img {
