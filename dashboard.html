@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/signin.css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  </head>
+  <body>
+    <!-- Horizontal Navigation bar -->
+    <header>
+      <div class="horizontal-sidebar">
+        <nav class="horizontal-nav">
+          <div class="icons">
+            <i class="fas fa-bars" style="padding-top:5px" id="menu"></i>
+            <img src="img/Support Iocn.svg" alt="" style="padding-top: 5px" />
+            <img src="img/Chat Icon.svg" alt="" style="padding-top: 5px" />
+            <img
+              src="img/Notification.svg"
+              alt=""
+              style="border-right: 1px solid #ebebf2; padding-right: 15px"
+            />
+            <div class="dropdown">
+              <h2 style="display: inline-block; padding-left: 20px">
+              John Doe
+              </h2>
+              <img src="img/small-down.svg" alt="" />
+              <div class="dropdown-content">
+                <a href="#"><span class="bold">Status: </span> Online</a>
+                <a href="#">Account Setting</a>
+                <a href="#">Feedback</a>
+                <a href="index.html">Log Out</a>
+              </div>
+            </div>
+            <a href="index.html">
+              <img src="img/Avatar.svg" alt="" />
+            </a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Vertical navbar begins from here -->
+
+      <nav class="side-bar" id="side-bar">
+        <div class="nav-text flex">
+          <i class="fas fa-times" id="sidebar-close" style="color:#BCBCCB;cursor: pointer; position: absolute;
+          right: 15px; display:none;" ></i>
+          <a href="todo.html"><h2>Smartacademy</h2></a>
+          <img src="img/Group 245.svg" alt="menu" id="sidebar-icon" />
+        </div>
+        <ul class="side-bar-ul">
+          <li class="active">
+            <a href="#">
+              <img src="img/Path 357.svg" alt="Home" />
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/icon_dashboard.svg" alt="Dashboard" />
+              Dashboard
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/Union 9.svg" alt="Products" />
+              Products
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/Path 108.svg" alt="Settings" />
+              Settings
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- Vertical navbar ends here -->
+
+      <!-- Javascript -->
+      <script src="./assests/dashboard.js">
+
+      </script>
+  </body>
+</html>
